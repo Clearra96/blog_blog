@@ -1,12 +1,12 @@
 <h1>Wlcome to my BlogBlog</h1>
 
 <% @posts.each do |post| %>
-  <h2><%= link_to post.title,post %></h2>
+  <h2><%= link_to post.title, post %></h2>
   <p>
     <%= time_ago_in_words post.created_at %> ago
   </P>
   <p>
-    <%=truncate post.text%>
+    <%= truncate post.text %>
   </p>
 <% end %>
 
