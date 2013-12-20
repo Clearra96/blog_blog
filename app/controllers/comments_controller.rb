@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   	@comment = @post.comments.build(params[:comment])
   	@comment.save
 
-  	redirect_to @post
+  	redirect_to (@post)
   end
 
   def destroy
